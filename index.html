@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Home - Puerto Bay: Puerto Columbia, Atlantico" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+    <title>Home - Puerto Bay: Puerto Columbia, Atlantico</title>
+
+    <!--external css file-->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/puertobay.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navigation">
+                <nav>
+                    <ul class="directory">
+                        <li><a href="puertobay.html" data-i18n="menu-home">home</a></li>
+                        <li><a href="html/menu.html" data-i18n="menu-menu">menu</a></li>
+                        <li><a href="#location" data-i18n="menu-location">location</a></li>
+                        <li><a href="#contact" data-i18n="menu-contact">contact</a></li>
+                    </ul>
+                    <div class="nav-space"></div>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/puertobay.col/"><img src="images/facebook-icon_32x32.png"alt="facebook logo"></a></li>
+                        <li><a href="https://www.instagram.com/puertobay.col/"><img src="images/instagram-icon_32x32.png"alt="instagram logo"></a></li>
+                    </ul>
+
+                    <div class="lng-swich switch-toggle switch-ios">
+                        <input id="week" name="view" type="radio" checked>
+                        <label for="week" onclick="setEnglish()">eng</label>
+
+                        <input id="month" name="view" type="radio">
+                        <label for="month" onclick="setSpanish()">esp</label>
+
+                        <a></a>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="logo">
+                    <img src="images/Screen Shot 2018-11-08 at 18.07.30.png" alt="logo">
+                <div class="down-arrow">   
+                    <img src="images/iconmonstr-angel-down-thin.svg" alt="down-arrow">
+                </div>
+            </div>
+        </header>
+        <div class="about">
+            <div class="about-header">
+                <h2 data-i18n="about-title">about</h2>
+            </div>
+            <div class="about-content">
+                <p data-i18n="about-content">Puerto Bay features an Australian style brunch menu with a local Carribean
+                    twist. We are a space to
+                    enjoy delicous food and drinks, the fresh sea air and an offering of local art and music.</p>
+                <img src="images/Screen Shot 2018-11-08 at 18.32.52.png" alt="patio">
+            </div>
+        </div>
+        <div id="location">
+            <h2 class=location-link><a href=#location>location</a></h2>
+            <div class="location-content">
+                <div class="location-blurb">
+                <p>We are located @ Cra 15 #1F-08 - Puerto Colombia, Atlantico, Colombia.</p>
+                <p>Friday 6:00pm - 11:00pm<br>Saturday 3:00pm - 10:00pm<br>Sunday 3:00pm - 10:00pm</p>
+            </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3916.54262105498!2d-74.95492773509278!3d10.997854792171482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCra+15+%231F-08+Puerto+Colombia%2C+Atlantico%2C+Colombia!5e0!3m2!1sen!2sau!4v1540982227544"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h2><a href="#contact">contact</a></h2>
+            <i id="back-to-top"></i>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>puertobay.col@gmail.com</p>
+                    <p>+57 301 3983224.</p>
+                </div>
+                <form onsubmit="createEmail()">
+                    <input id="inputs" type="text" id="fname" name="name" placeholder="Your name..">
+                    <input id="inputs" type="email" id="femail" name="email" placeholder="Your email">
+                    <textarea id="inputs" id="subject" name="subject" placeholder="Say hello" style="resize: none"></textarea>
+                    <input id="inputs" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div id="up-arrow">
+                <img src="images/iconmonstr-angel-up-thin.svg" alt="up-arrow">
+            </div>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/puertobay.col/"><img src="images/facebook-icon_32x32.png" alt="facebook logo"></a></li>
+                <li><a href="https://www.instagram.com/puertobay.col/"><img src="images/instagram-icon_32x32.png"alt="instagram logo"></a></li>
+            </ul>
+            <p>created by jacobus for puerto bay.</p>
+        </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/lib/CLDRPluralRuleParser/src/CLDRPluralRuleParser.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.language.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.parser.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+<script src="js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+<script src="js/app.js"></script>
+<!-- <script src="../js/puertobay.js"></script> -->
+
+</html>
